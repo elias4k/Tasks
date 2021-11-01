@@ -16,8 +16,6 @@ router.post('/', async (req, res) => {
 
 router.put('/:id', async (req, res) => {
     await Task.findByIdAndUpdate(req.params.id, req.body)
-    console.log(req.params)
-    console.log(req.body)
     res.json({
         status: "Task Updated"
     });
