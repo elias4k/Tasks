@@ -16,7 +16,7 @@ app.use(morgan('dev'))
 app.use(express.json())
 
 // Routes
-app.use('tasks', require('./routes/tasks.js'))
+app.use('/tasks', require('./routes/tasks.js'))
 
 
 // Statics Files
